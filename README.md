@@ -86,6 +86,8 @@ show ip interface brief
 show ip route
 show running-config
 show cdp neighbors
+show interfaces status
+show mac address-table
 ping
 traceroute
 ```
