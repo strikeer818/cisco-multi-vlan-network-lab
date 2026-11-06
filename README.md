@@ -93,10 +93,10 @@ traceroute
 ```
 ## Project Files
 
-- multi-vlan-network.pkt – Cisco Packet Tracer project file.
+- Project.pkt – Cisco Packet Tracer project file.
 - configurations/ – Device configuration files.
 - topology/ – Network topology diagram.
-- screenshots/ – Configuration and connectivity evidence.
+- testing/ – Configuration and connectivity evidence.
 
 ## Learning Outcomes
 
