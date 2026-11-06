@@ -88,3 +88,26 @@ show running-config
 show cdp neighbors
 ping
 traceroute
+```
+## Project Files
+
+- multi-vlan-network.pkt – Cisco Packet Tracer project file.
+- configurations/ – Device configuration files.
+- topology/ – Network topology diagram.
+- screenshots/ – Configuration and connectivity evidence.
+
+## Learning Outcomes
+
+Through this project, I developed practical experience with Cisco networking, VLAN segmentation, inter-VLAN communication, static routing, and network troubleshooting.
+
+The project helped me understand how multiple departments can communicate across separate VLANs while maintaining logical network segmentation.
+
+## Future Improvements
+
+- Implement DHCP pools for automatic IP assignment.
+- Replace static routing with OSPF dynamic routing.
+- Add additional routers to explore redundant paths.
+- Explore network redundancy and failover.
+- Implement access control lists (ACLs) to control inter-VLAN traffic.
+
+
