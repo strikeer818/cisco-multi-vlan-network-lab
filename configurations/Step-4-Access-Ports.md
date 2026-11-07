@@ -41,8 +41,8 @@ end
 We could use the following command to verify that the access ports were successfully configured on each switch and to confirm taht the appropriate interfaces were assigned to their respective departmental VLANs.
 
 ```cisco
-show interfaces status
 show vlan brief
+show interfaces status
 ```
 
 <img width="768" height="227" alt="image" src="https://github.com/user-attachments/assets/6f6ac245-95a3-4073-a3e9-36640f83659f" />
