@@ -14,7 +14,7 @@ name SALES
 vlan 20
 name HR
 vlan 30
-name IT/ADMIN
+name IT-ADMIN
 end
 ```
 
@@ -28,7 +28,7 @@ name SALES
 vlan 20
 name HR
 vlan 30
-name IT/ADMIN
+name IT-ADMIN
 end
 ```
 
@@ -42,7 +42,7 @@ name SALES
 vlan 20
 name HR
 vlan 30
-name IT/ADMIN
+name IT-ADMIN
 end
 ```
 
@@ -53,4 +53,14 @@ We could use the following command to verify that the VLANs were successfully cr
 ```cisco
 show vlan brief
 ```
+
+
+<img width="765" height="245" alt="image" src="https://github.com/user-attachments/assets/32eed2c3-4a84-40df-b683-4d7f79737676" />
+
+<img width="765" height="245" alt="image" src="https://github.com/user-attachments/assets/62c43c25-3ab0-4a03-bd90-b4710d9bf767" />
+
+<img width="765" height="245" alt="image" src="https://github.com/user-attachments/assets/2a78c8e5-cf59-4aa0-a2ee-297178293391" />
+
+
+
 
