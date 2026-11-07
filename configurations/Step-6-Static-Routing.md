@@ -56,8 +56,8 @@ show ip int brief
 
 ## Summary
 
+Successfully configured IP addressing and static routing between Router-CORE and Router-BRANCH to establish bidirectional communication between the routers and the departmental VLAN networks.
 
+A default route was configured on Router-CORE to forward traffic destined for unknown networks towards Router-BRANCH, while static routes on Router-BRANCH provide return paths to the three departmental VLANs.
 
-
-
-
+The routing tables and interface configurations were verified to confirm the correct routes, IP addressing, and operational status of both routers.
