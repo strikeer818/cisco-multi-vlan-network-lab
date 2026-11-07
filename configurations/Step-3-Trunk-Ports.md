@@ -20,7 +20,7 @@ This helped identify the correct interfaces that needed to be configured as trun
 ```cisco
 enable
 configure terminal
-interface 
+interface Fa0/3
 switchport mode trunk
 switchport trunk allowed vlan 10,20,30
 end
@@ -31,12 +31,10 @@ end
 ```cisco
 enable
 configure terminal
-vlan 10
-name SALES
-vlan 20
-name HR
-vlan 30
-name IT-ADMIN
+switchport trunk allowed vlan 10,20,30
+interface Fa0/2
+switchport mode trunk
+switchport trunk allowed vlan 10,20,30
 end
 ```
 
@@ -45,12 +43,15 @@ end
 ```cisco
 enable
 configure terminal
-vlan 10
-name SALES
-vlan 20
-name HR
-vlan 30
-name IT-ADMIN
+interface Fa0/2
+switchport mode trunk
+switchport trunk allowed vlan 10,20,30
+interface Fa0/3
+switchport mode trunk
+switchport trunk allowed vlan 10,20,30
+interface Fa0/1
+switchport mode trunk
+switchport trunk allowed vlan 10,20,30
 end
 ```
 
@@ -59,21 +60,17 @@ end
 We could use the following command to verify that the VLANs were successfully created on each switch.
 
 ```cisco
-show vlan brief
+show interfaces trunk
 ```
-
-
-<img width="765" height="245" alt="image" src="https://github.com/user-attachments/assets/32eed2c3-4a84-40df-b683-4d7f79737676" />
-
-<img width="765" height="245" alt="image" src="https://github.com/user-attachments/assets/62c43c25-3ab0-4a03-bd90-b4710d9bf767" />
-
-<img width="765" height="245" alt="image" src="https://github.com/user-attachments/assets/2a78c8e5-cf59-4aa0-a2ee-297178293391" />
+<img width="638" height="194" alt="image" src="https://github.com/user-attachments/assets/1310002c-05f6-4d11-b4ec-286fdee88bbe" />
+<img width="638" height="117" alt="image" src="https://github.com/user-attachments/assets/25d136dc-cf31-447f-ae9a-061a6c18eda4" />
+<img width="638" height="125" alt="image" src="https://github.com/user-attachments/assets/626a6dd7-6501-4326-ba00-2a2837606676" />
 
 ## Summary
 
-As shown in the screenshots above, the ```show vlan brief``` command confirms that VLANs 10,20, and 30 have been successfully created on the switches. 
+Successfully configured trunk links between SW1-SALES-HR, SW2-IT, SW3-CORE, and Router-CORE.
 
-At this stage, the VLANs have been created, but access ports have not yet been assigned. This will be configured in Step 4, where end devices will be allocated to their respective departmental VLANs.
+The ```show cdp neighbors``` command was used to identify the connected interfaces before configuration, while ```show interfaces trunk``` was used to verify the trunk configurations.
 
-These VLANs provide the logical network segmentation required for separating departmental traffic throughout the network.
+VLANs 10,20,30 can now travel across the configured trunk links, allowing the network to carry multiple VLANs over shared physical connections.
 
