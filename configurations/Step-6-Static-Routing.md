@@ -2,7 +2,9 @@
 
 ## Objective
 
-Creating a static route and giving ip address for both Routers so traffic can smoothly pass through as well as creating a default gateway as if anything goes wrong it’ll send traffic directly to Router-BRANCH
+Configure IP addressing and static routing between Router-CORE and Router-BRANCH to establish communication between both routers and the departmental VLAN networks.
+
+A default route is configured on Router-CORE to forward traffic destined for unknown networks towards Router-BRANCH, allowing it to act as the upstream gateway.
 
 ## Identification
 
@@ -47,7 +49,14 @@ show ip route
 show ip int brief
 ```
 
+<img width="776" height="173" alt="image" src="https://github.com/user-attachments/assets/c4b1b748-7203-42bd-b09d-331f2283b501" />
+<img width="771" height="402" alt="image" src="https://github.com/user-attachments/assets/344e03d0-00a6-46ff-9c2e-066eed7f6a24" />
+<img width="780" height="101" alt="image" src="https://github.com/user-attachments/assets/5f98ed01-fd2c-452c-882c-0619966bcb27" />
+<img width="772" height="347" alt="image" src="https://github.com/user-attachments/assets/b2e680e3-e652-4073-a085-350ddcc2d844" />
+
 ## Summary
+
+
 
 
 
