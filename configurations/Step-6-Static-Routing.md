@@ -1,5 +1,4 @@
-
-# Step 6 - 
+# Step 6 - Static-Routing
 
 ## Objective
 
