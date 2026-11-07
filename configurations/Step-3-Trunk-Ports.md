@@ -57,7 +57,7 @@ end
 
 ## Verification
 
-We could use the following command to verify that the VLANs were successfully created on each switch.
+We could use the following command to verify that the trunk ports were successfully configured on each switch and to confirm which VLANs are permitted across the trunk links.
 
 ```cisco
 show interfaces trunk
