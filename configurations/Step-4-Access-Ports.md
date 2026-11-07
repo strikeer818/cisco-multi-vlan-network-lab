@@ -3,26 +3,25 @@
 
 ## Objective
 
-Configure trunk ports across all switches to allow traffic from multiple VLANs to travel across shared physical connections using IEEE 802.1Q encapsulation
+Configure PC-Connected switch ports in access mode and assign them to their respective VLANs to ensure end devices are connected to the appropriate departmental networks.
 
 ## Identification
 
-<img width="709" height="98" alt="image" src="https://github.com/user-attachments/assets/f00cf5d4-5ca1-462f-82f9-d0647dc87689" />
-<img width="709" height="212" alt="image" src="https://github.com/user-attachments/assets/b3f8d43c-b6eb-4f62-b885-193669adffc6" />
-<img width="709" height="98" alt="image" src="https://github.com/user-attachments/assets/a79fe322-11d4-4d11-86f6-768d497846a5" />
+The ```show interfaces status``` command was used to identify active switch interfaces, their connection status, and their existing VLAN assignments.
 
-Before configuring trunk ports, the ```show cdp neighbors``` command was used to identify neighboring Cisco devices and determine which local switch interfaces were connected to other switches and Router-CORE.
-
-This helped identify the correct interfaces that needed to be configured as trunk ports
+The appropriate interfaces had already been identified during the inital network setup, allowing the correct ports to be selected to their respective end devices.
 
 ## SW1-SALES-HR
 
 ```cisco
 enable
 configure terminal
-interface Fa0/3
-switchport mode trunk
-switchport trunk allowed vlan 10,20,30
+interface Fa0/1
+switchport mode access
+switchport access vlan 10
+interface Fa0/2
+switchport mode access
+switchport access vlan 10
 end
 ```
 
@@ -31,50 +30,34 @@ end
 ```cisco
 enable
 configure terminal
-switchport trunk allowed vlan 10,20,30
-interface Fa0/2
-switchport mode trunk
-switchport trunk allowed vlan 10,20,30
-end
-```
-
-## SW3-CORE
-
-```cisco
-enable
-configure terminal
-interface Fa0/2
-switchport mode trunk
-switchport trunk allowed vlan 10,20,30
-interface Fa0/3
-switchport mode trunk
-switchport trunk allowed vlan 10,20,30
 interface Fa0/1
-switchport mode trunk
-switchport trunk allowed vlan 10,20,30
+switchport mode access
+switchport access vlan 30
 end
 ```
 
 ## Verification
 
-We could use the following command to verify that the trunk ports were successfully configured on each switch and to confirm which VLANs are permitted across the trunk links.
+We could use the following command to verify that the access ports were successfully configured on each switch and to confirm taht the appropriate interfaces were assigned to their respective departmental VLANs.
 
 ```cisco
-show interfaces trunk
+show interfaces status
+show vlan brief
 ```
-<img width="638" height="194" alt="image" src="https://github.com/user-attachments/assets/1310002c-05f6-4d11-b4ec-286fdee88bbe" />
-<img width="638" height="117" alt="image" src="https://github.com/user-attachments/assets/25d136dc-cf31-447f-ae9a-061a6c18eda4" />
-<img width="638" height="125" alt="image" src="https://github.com/user-attachments/assets/626a6dd7-6501-4326-ba00-2a2837606676" />
+
+<img width="768" height="227" alt="image" src="https://github.com/user-attachments/assets/6f6ac245-95a3-4073-a3e9-36640f83659f" />
+<img width="768" height="99" alt="image" src="https://github.com/user-attachments/assets/f771e1d6-433a-42a7-955a-a9c187803f1d" />
+<img width="768" height="246" alt="image" src="https://github.com/user-attachments/assets/3b7a9aa4-2256-444d-8891-759b900b74b8" />
+<img width="768" height="77" alt="image" src="https://github.com/user-attachments/assets/ebfc6e16-3521-4754-ae81-6dd3f73eceb5" />
+
 
 ## Summary
 
-Successfully configured trunk links between SW1-SALES-HR, SW2-IT, SW3-CORE, and Router-CORE.
+Successfully configured and verified access port assignments across SW1-SALES-HR and SW2-IT.
 
-The ```show cdp neighbors``` command was used to identify the connected interfaces before configuration, while ```show interfaces trunk``` was used to verify the trunk configurations.
+Each end device was assigned to its respective departmental VLAN to ensure proper network segmentation.
 
-VLANs 10,20,30 can now travel across the configured trunk links, allowing the network to carry multiple VLANs over shared physical connections.
+The ```show vlan brief``` and ```show interfaces status``` commands were used to verify VLANs, interface assignments, and connection status.
 
-As shown earlier, using command ```show cdp neighbors``` you're able to see a physical connection between SW3-CORE and Router-CORE
-
-At this stage, Router-CORE is connected through its physical GigabitEthernet interface. Router subinterfaces have not yet been configured, as this will be configured in Step 5 during the implementation of Router-on-a-Stick.
+This configuration establishes the access layer required for end devices to communicate within their designated VLANs.
 
