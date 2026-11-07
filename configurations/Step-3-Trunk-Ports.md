@@ -74,3 +74,6 @@ The ```show cdp neighbors``` command was used to identify the connected interfac
 
 VLANs 10,20,30 can now travel across the configured trunk links, allowing the network to carry multiple VLANs over shared physical connections.
 
+As shown earlier, using command ```show cdp neighbors``` you're able to see a physical connection between SW3-CORE and Router-CORE
+
+At this stage, Router-CORE is connected through its physical GigabitEthernet interface. Router subinterfaces have not yet been configured, as this will be configured in Step 5 during the implementation of Router-on-a-Stick.
