@@ -61,6 +61,6 @@ show vlan brief
 
 <img width="765" height="245" alt="image" src="https://github.com/user-attachments/assets/2a78c8e5-cf59-4aa0-a2ee-297178293391" />
 
-
+As you'll notice with the images above that not only does it show that VLANs were successfully created but they are also showing the appropriate access ports assigned to their respective VLANs
 
 
