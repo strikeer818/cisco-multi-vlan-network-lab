@@ -67,5 +67,5 @@ As shown in the screenshots above, the ```show vlan brief``` command confirms th
 
 At this stage, the VLANs have been created, but access ports have not yet been assigned. This will be configured in Step 4, where end devices will be allocated to their respective departmental VLANs.
 
-
+These VLANs provide the logical network segmentation required for separating departmental traffic throughout the network.
 
