@@ -2,7 +2,7 @@
 
 ## Objective
 
-Configuring VLANs for all switches to separate the network into different departments
+Configuring VLANs for all switches to separate the network into different departments.
 
 ## SW1-SALES-HR
 
@@ -48,7 +48,7 @@ end
 
 ## Verification
 
-We could use the following command to verify that the VLANs were successfully created on each switch
+We could use the following command to verify that the VLANs were successfully created on each switch.
 
 ```cisco
 show vlan brief
@@ -61,6 +61,7 @@ show vlan brief
 
 <img width="765" height="245" alt="image" src="https://github.com/user-attachments/assets/2a78c8e5-cf59-4aa0-a2ee-297178293391" />
 
-As you'll notice with the images above that not only does it show that VLANs were successfully created but they are also showing the appropriate access ports assigned to their respective VLANs
+As shown in the screenshots above, the ```show vlan brief``` command confirms that VLANs 10,20, and 30 have been successfully created on the switches. At this stage, the VLANs have been created, but access ports have not yet been assigned. This will be configured in Step 4, where end devices will be allocated to their respective departmental VLANs.
+
 
 
