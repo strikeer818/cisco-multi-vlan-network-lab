@@ -61,6 +61,8 @@ show vlan brief
 
 <img width="765" height="245" alt="image" src="https://github.com/user-attachments/assets/2a78c8e5-cf59-4aa0-a2ee-297178293391" />
 
+## Summary
+
 As shown in the screenshots above, the ```show vlan brief``` command confirms that VLANs 10,20, and 30 have been successfully created on the switches. 
 
 At this stage, the VLANs have been created, but access ports have not yet been assigned. This will be configured in Step 4, where end devices will be allocated to their respective departmental VLANs.
