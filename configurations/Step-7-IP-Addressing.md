@@ -3,12 +3,12 @@
 
 ## Objective
 
-Manually configuring default gateway and IP address for end devices because we don’t yet have a DHCP server to automatically assign IP address to these devices
+Manually configure the IP addresses and default gateways of end devices since a DHCP server has not yet been implemented to automatically assign IP addresses.
 
 ## SALES
 
 <img width="680" height="443" alt="Algorithm Settings" src="https://github.com/user-attachments/assets/533abeba-87ee-4c8d-b442-3c1246d9bd21" />
-<img width="683" height="410" alt="Settings" src="https://github.com/user-attachments/assets/17176f40-f565-4433-87e4-eab8f22dc8b3" />
+<img width="680" height="410" alt="Settings" src="https://github.com/user-attachments/assets/17176f40-f565-4433-87e4-eab8f22dc8b3" />
 
 ## HR
 
@@ -18,7 +18,7 @@ Manually configuring default gateway and IP address for end devices because we d
 ## IT/ADMIN
 
 <img width="680" height="449" alt="Settings" src="https://github.com/user-attachments/assets/7bbf98a5-061b-4b4b-8b88-2b82c227de93" />
-<img width="679" height="419" alt="GLOBAL" src="https://github.com/user-attachments/assets/751e0914-80a2-41bb-81d2-525b0446f968" />
+<img width="680" height="419" alt="GLOBAL" src="https://github.com/user-attachments/assets/751e0914-80a2-41bb-81d2-525b0446f968" />
 
 ## Summary
 
