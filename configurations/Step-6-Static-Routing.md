@@ -15,7 +15,7 @@ enable
 configure terminal
 int g0/1
 no shutdown
-ip address.10.0.0.2 255.255.255.0
+ip address 10.0.0.2 255.255.255.0
 end
 configure terminal
 ip route 0.0.0.0 0.0.0.0 10.0.0.1
