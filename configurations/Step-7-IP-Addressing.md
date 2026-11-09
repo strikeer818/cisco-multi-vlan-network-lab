@@ -22,7 +22,7 @@ Manually configure the IP addresses and default gateways of end devices since a 
 
 ## Department Network Configuration
 
-| Department | Network Address | Subnet Mask | Default Gateway | IPv4 Address |
+| Department | Network Address | Subnet Mask | Default Gateway | IP Address |
 |---|---|---|---|---|
 | SALES | 10.10.1.0 | 255.255.255.0 (/24) | 10.10.1.1 | 10.10.1.10 |
 | HR | 10.10.2.0 | 255.255.255.0 (/24) | 10.10.2.1 | 10.10.2.10 |
@@ -34,11 +34,13 @@ Static IP addressing was manually configured for all end devices in the SALES, H
 
 Each end device was assigned the following network settings:
 
-- **IP Address**: A unique IP address within its department's designated subnet.
+- **Network Address**: Identifies the network assigned to each depeartement.
 
 - **Subnet Mask**: The appropriate subnet mask to identify the network portion and host portion of the IP address.
 
 - **Default Gateway**: The IP address of the router interface assigned to the respective department's network.
+  
+- **IP Address**: A unique address assigned to each end device within its department's designated subnet.
 
 This configuration ensures that each device can communicate with other devices within its subnet and access devices on different networks through the router.
 
