@@ -32,7 +32,6 @@ This allows us to confirm that the manually configured network settings match th
 
 ```
 ipconfig
-
 ```
 
 ## Department Network Configuration
