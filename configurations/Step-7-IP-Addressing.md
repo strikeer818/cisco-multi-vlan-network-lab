@@ -20,6 +20,14 @@ Manually configure the IP addresses and default gateways of end devices since a 
 <img width="680" height="449" alt="Settings" src="https://github.com/user-attachments/assets/7bbf98a5-061b-4b4b-8b88-2b82c227de93" />
 <img width="680" height="419" alt="GLOBAL" src="https://github.com/user-attachments/assets/751e0914-80a2-41bb-81d2-525b0446f968" />
 
+## Department IP Address Allocation
+
+| Department | Network Address | Subnet Mask | Default Gateway |
+|---|---|---|---|
+| SALES | 10.10.1.0 | 255.255.255.0 (/24) | 10.10.1.1 |
+| HR | 10.10.2.0 | 255.255.255.0 (/24) | 10.10.2.1 |
+| IT/ADMIN | 10.10.3.0 | 255.255.255.0 (/24) | 10.10.3.1 |
+
 ## Summary
 
 Static IP addressing was manually configured for all end devices in the SALES, HR, and IT/ADMIN departments because a DHCP server has not yet been implemented.
