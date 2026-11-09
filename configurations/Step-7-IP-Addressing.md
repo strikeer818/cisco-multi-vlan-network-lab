@@ -22,7 +22,7 @@ Manually configure the IP addresses and default gateways of end devices since a 
 
 ## Summary
 
-static IP addressing was manually configured for all end devices in the SALES, HR, and IT/ADMIN departments because a DHCP server has not yet been implemented.
+Static IP addressing was manually configured for all end devices in the SALES, HR, and IT/ADMIN departments because a DHCP server has not yet been implemented.
 
 Each end device was assigned the following network settings:
 
