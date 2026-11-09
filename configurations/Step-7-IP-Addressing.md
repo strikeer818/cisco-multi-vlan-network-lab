@@ -20,6 +20,21 @@ Manually configure the IP addresses and default gateways of end devices since a 
 <img width="680" height="449" alt="Settings" src="https://github.com/user-attachments/assets/7bbf98a5-061b-4b4b-8b88-2b82c227de93" />
 <img width="680" height="419" alt="GLOBAL" src="https://github.com/user-attachments/assets/751e0914-80a2-41bb-81d2-525b0446f968" />
 
+## Verification
+
+<img width="700" height="354" alt="image" src="https://github.com/user-attachments/assets/6014ad32-fcfd-477b-b236-f6f0b9ca9722" />
+<img width="700" height="364" alt="image" src="https://github.com/user-attachments/assets/af96b149-c1c4-4c91-80a1-a57f53358d71" />
+<img width="700" height="363" alt="image" src="https://github.com/user-attachments/assets/cba86e3f-d983-4c2c-b483-88d5acb661fc" />
+
+The following command is used to identify and verify the network configuration of each end device, including its IP address, subnet mask, and default gateway.
+
+This allows us to confirm that the manually configured network settings match the intended addressing scheme for each department.
+
+```
+ipconfig
+
+```
+
 ## Department Network Configuration
 
 | Department | Network Address | Subnet Mask | Default Gateway | IP Address |
